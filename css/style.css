@@ -28,3 +28,8 @@ header {
   padding-left: 70px;
   padding-right: 70px;
 }
+
+p {
+  max-width: 70ch;
+  padding: 10px;
+}
