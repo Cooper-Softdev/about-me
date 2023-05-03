@@ -1,6 +1,6 @@
 'use strict';
 
-let userName = prompt('Hey you! What\'s your name?');
+// let userName = prompt('Hey you! What\'s your name?');
 
 alert(`Welcome to my about me ${userName}! To learn a bit... about me, let\'s play a guessing game, answer with yes/no or y/n`);
 
@@ -53,3 +53,6 @@ if (questionFive === 'y' || questionFive === 'yes') {
   alert(`Both answers are correct ${userName}. I have a step-brother/sister and a half-brother. I didn't grow up with either and I just learned of the existence of the half-brother... Dad didn't know he had another kid.`);
 }
 console.log(questionFive);
+
+//Question6 - now it gets tough
+let questionSix = prompt 
