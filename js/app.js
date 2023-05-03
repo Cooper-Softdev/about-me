@@ -49,5 +49,7 @@ let questionFive = prompt('Do I have any siblings?').toLowerCase();
 
 if (questionFive === 'y' || questionFive === 'yes') {
   alert(`Both answers are correct ${userName}. I have a step-brother/sister and a half-brother. I didn't grow up with either and I just learned of the existence of the half-brother... Dad didn't know he had another kid.`);
+} else if (questionFive === 'n' || questionFive === 'yes') {
+  alert(`Both answers are correct ${userName}. I have a step-brother/sister and a half-brother. I didn't grow up with either and I just learned of the existence of the half-brother... Dad didn't know he had another kid.`);
 }
 console.log(questionFive);
