@@ -22,20 +22,9 @@ header {
 .bioContainer {
   display: flex;
   flex-direction: column;
-  justify-content: ;
-  align-items: center; 
-}
-
-
-
-h1 { 
-  margin: 15px;
-}
-
-h2 {
-  margin: 15px;
- }
-
-h3 {
-margin: 15px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
