@@ -3,5 +3,39 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
   background-color: #ff71ce;
+}
+
+.aboutMe {
+  margin: 10px;
+}
+
+.ownerName {
+  margin: 10px;
+}
+
+.bioContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
+  align-items: center; 
+}
+
+
+
+h1 { 
+  margin: 15px;
+}
+
+h2 {
+  margin: 15px;
+ }
+
+h3 {
+margin: 15px;
 }
