@@ -1,12 +1,12 @@
 # about-me# 
 
-LAB - Number
+LAB - 02
 
 ## Project Name
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+Basic About me page demonstrating prompts and some logical operators.
 
-### Author: Student/Group Name
+### Author: Dylan Cooper
 
 ### Links and Resources
 
@@ -15,9 +15,8 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Lighthouse Accessibility Report Score
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
+* [Lighthouse score](img/Lighthouse.png)
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* I had to use a lot of different things to make this. Mostly CSS related as I'm really rusty. W3Schools * pages and MDN Mozilla.
