@@ -1,11 +1,15 @@
 'use strict';
 
+
+
 let userName = prompt('Hey you! What\'s your name? Or type skip to...skip.');
+
 
 if (userName !== 'skip') {
   alert(`Welcome to my about me ${userName}! To learn a bit... about me, let's play a guessing game, answer with yes/no or y/n`);
   let correctGuess = 0;
   // Question1
+function firstQuestion(){
   let questionOne = prompt('Do I have any pets?').toLowerCase();
 
   if (questionOne === 'y' || questionOne === 'yes') {
@@ -16,8 +20,10 @@ if (userName !== 'skip') {
   }
   console.log(questionOne);
   console.log(correctGuess);
+}
 
-  // Question2
+
+function secondQuestion(){
   let questionTwo = prompt('Next question! Do I play an instrument?').toLowerCase();
   if (questionTwo === 'y' || questionTwo === 'yes') {
     alert(`It depends ${userName}, is mayonnaise an instrument? I'm kidding, I'm relearning guitar, I haven't played in years.`);
@@ -27,7 +33,10 @@ if (userName !== 'skip') {
   }
   console.log(questionTwo);
   console.log(correctGuess);
+}
 
+
+function thirdQuestion(){
   //Question3
   let questionThree = prompt('This one should be easy. Am I a fan of motor sports?').toLowerCase();
   if (questionThree === 'y' || questionThree === 'yes') {
@@ -38,7 +47,10 @@ if (userName !== 'skip') {
   }
   console.log(questionThree);
   console.log(correctGuess);
+}
 
+
+function fourthQuestion(){
   //Question4
   let questionFour = prompt('Am I down with the Spice Melange? Am I a Capsaicin Connoisseur?').toLowerCase();
   if (questionFour === 'y' || questionFour === 'yes') {
@@ -49,7 +61,9 @@ if (userName !== 'skip') {
   }
   console.log(questionFour);
   console.log(correctGuess);
+}
 
+function fifthQuestion(){
   //Question5
   let questionFive = prompt('Do I have any siblings?').toLowerCase();
   if (questionFive === 'y' || questionFive === 'yes') {
@@ -61,7 +75,10 @@ if (userName !== 'skip') {
   }
   console.log(questionFive);
   console.log(correctGuess);
+}
 
+
+function sixthQuestion(){
   // Question6
   const totalDogs = '3';
   let wrongGuess = 0;
@@ -84,7 +101,9 @@ if (userName !== 'skip') {
     console.log(questionSix);
     console.log(correctGuess);
   }
+}
 
+function seventhQuestion(){
   //Question7
   const myDogsArr = ['hanzo', 'sombra', 'misty'];
   let guessedDogsArr = [];
@@ -103,7 +122,14 @@ if (userName !== 'skip') {
     console.log(dogGuess);
     console.log(guessedDogsArr);
   }
-
+ }
+ firstQuestion();
+ secondQuestion();
+thirdQuestion();
+ fourthQuestion();
+ fifthQuestion();
+ sixthQuestion();
+ seventhQuestion();
   if (guessedDogsArr.length === myDogsArr.length) {
     correctGuess++;
     console.log(correctGuess);
