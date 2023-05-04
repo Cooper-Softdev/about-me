@@ -90,9 +90,9 @@ if (userName !== 'skip') {
   let guessedDogsArr = [];
   let wrongGuesses = 0;
 
-  while (wrongGuesses < 6 && guessedDogsArr.length !== myDogsArr.length) {
-    let dogGuess = prompt('Can you guess the names of my dogs? One at a time only please or you\'ll break me.').toLowerCase();
-    if (myDogsArr.indexOf(dogGuess) !== -1 && guessedDogsArr.indexOf(dogGuess) === -1) {
+  let dogGuess = prompt('Can you guess the names of my dogs? One at a time only please or you\'ll break me.').toLowerCase();
+  if (myDogsArr.indexOf(dogGuess) !== -1 && guessedDogsArr.indexOf(dogGuess) === -1) {
+    while (wrongGuesses < 6 && guessedDogsArr.length !== myDogsArr.length) {
       guessedDogsArr.push(dogGuess);
       alert('Good guess!');
     }
