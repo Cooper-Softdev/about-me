@@ -1,6 +1,7 @@
 'use strict';
 
 // let userName = prompt('Hey you! What\'s your name?');
+let correctGuessTotal = 0;
 
 alert(`Welcome to my about me ${userName}! To learn a bit... about me, let\'s play a guessing game, answer with yes/no or y/n`);
 
