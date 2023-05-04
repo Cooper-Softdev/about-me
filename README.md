@@ -20,3 +20,7 @@ Basic About me page demonstrating prompts and some logical operators.
 ### Reflections and Comments
 
 * I had to use a lot of different things to make this. Mostly CSS related as I'm really rusty. W3Schools * pages and MDN Mozilla.
+
+This code was completed through pair programming:
+Navigator is Dylan
+Driver is Wasim 
