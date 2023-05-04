@@ -96,6 +96,10 @@ if (userName !== 'skip') {
       guessedDogsArr.push(dogGuess);
       alert('Good guess!');
     }
+    else if (myDogsArr.indexOf(dogGuess) === -1) {
+      alert(`I'm sorry ${dogGuess} is not one, try again`);
+      wrongGuesses++;
+    }
     console.log(dogGuess);
     console.log(guessedDogsArr);
   }
@@ -105,8 +109,7 @@ if (userName !== 'skip') {
     console.log(correctGuess);
     alert(`Congrats! You correctly guessed them all! Of all the questions you got ${correctGuess} out of 7 questions right!`);
   }
-  else {
+  if (guessedDogsArr.length !== myDogsArr.length && wrongGuesses === 6) {
     alert(`Great effort, but you did not guess them all correctly, my dogs are ${myDogsArr}, you got ${correctGuess} out of 7 questions right!`);
-    wrongGuesses++;
   }
 }
