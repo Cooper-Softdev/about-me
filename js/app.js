@@ -97,12 +97,12 @@ if (userName !== 'skip') {
       alert('Good guess!');
     }
     console.log(dogGuess);
-    console.log(correctGuess);
     console.log(guessedDogsArr);
   }
 
   if (guessedDogsArr.length === myDogsArr.length) {
     correctGuess++;
+    console.log(correctGuess);
     alert(`Congrats! You correctly guessed them all! Of all the questions you got ${correctGuess} out of 7 questions right!`);
   }
   else {
