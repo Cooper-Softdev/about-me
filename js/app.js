@@ -97,7 +97,7 @@ if (userName !== 'skip') {
       alert('Good guess!');
     }
     else if (myDogsArr.indexOf(dogGuess) === -1) {
-      alert(`I'm sorry ${dogGuess} is not one, try again`);
+      alert(`I'm sorry ${dogGuess} is not one, attempt ${wrongGuesses} / 6, try again`);
       wrongGuesses++;
     }
     console.log(dogGuess);
