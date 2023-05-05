@@ -46,7 +46,7 @@ if (userName !== 'skip') {
       alert('Oof that is incorrect, there\'s a pattern to these answers, ya know.');
     }
     console.log(questionThree);
-    console.log(correctGuess);
+    console.log(correctGuess); 
   }
 
 
