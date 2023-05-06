@@ -1,5 +1,33 @@
 body {
+  font-family: 'VT323', monospace;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #00fff9;
+  background-image: url('/img/vaporwaveSun.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+}
+
+#layerOne {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  z-index: 9999;
+  color: #00FF00;
+}
+
+#layerOne h1 {
+  margin: 100px
 }
 
 header {
@@ -11,27 +39,50 @@ header {
   background-color: #ff71ce;
 }
 
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 49% {
+      opacity: 1;
+  }
+  50%, 100% {
+      opacity: 0;
+  }
+}
+
 ol {
   list-style: decimal;
 }
 
 li::marker {
-  color: #FF71CE;
+  color: #05FFA1;
+}
+
+li {
+  margin-top: 8px;
 }
 
 ul {
   list-style-type: circle;
-  list-style-type: none;
-  padding-left: 0;
+  /* list-style-type: none; */
+  /* padding-left: 0; */
 }
 /* to revert bullit img to circle comment out line 24-25 & 28-33 */
-.resumeContainer li {
+/* .resumeContainer li { */
   padding-left: 1.5em;
   background-image: url(../img/palmTreeRight.png);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 15px auto;
-}
+/* } */
 
 .aboutMe {
   margin: 10px;
@@ -41,39 +92,79 @@ ul {
   margin: 10px;
 }
 
+
+.mainFlex {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start
+}
+
+.palmLeftSide {
+  display: flex;
+  flex-direction: column;;
+  padding-top: 205px;
+  padding-right: 40px;
+}
+
+.palmRightSide {
+  display: flex;
+  flex-direction: column;
+  padding-top: 205px;
+  padding-left: 40px;
+}
+
+.palmLeftImg { 
+  width: 25vw; 
+  height: 35vw;
+  max-width: 500px;
+  max-height: 600px;
+}
+
+.palmRightImg {
+  transform: scaleX(-1); 
+  width: 25vw; 
+  height: 35vw;
+  max-width: 500px;
+  max-height: 600px;
+}
+
 .bioContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 560px;
 }
 
 p {
   max-width: 80ch;
-  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 h1 { 
-  margin: 15px;
+  margin-bottom: 20px;
   max-width: 80ch;
 }
 
 .resumeContainer {
   display: flex;
-  
+  margin-top: 25px;
+  margin-left: 35px;
 }
 
 .eduContainer {
-  
-  margin: 15px;
+  padding-right: 10px;
+  padding-right: 40px;
  }
 
 .jobContainer {
-
-  margin: 15px;
+  padding-left: 0px;
 }
 
 .topTen {
@@ -81,4 +172,13 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 15px;
+}
+
+.footContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; 
+  padding-left: 40px;
 }

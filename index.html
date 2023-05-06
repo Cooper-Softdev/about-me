@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,60 +8,96 @@
   <title>About Me</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+  </style>
 </head>
+
 <body>
-  <header>
-    <nav></nav>
-    <h1 class="aboutMe">ABOUT ME</h1>
-    <h2 class="ownerName">Dylan Cooper</h2>
-  </header>
-  <main>
-    <div class="bioContainer">
-      <h1>Short Bio</h1>
-        <p>Hey everyone, my name is Cooper, and I'd like to tell you a little about myself. I was born in Florida, but I spent most of my childhood in two very different places: Staten Island in New York and the beautiful countryside of Pennsylvania. My career as an air traffic controller with the FAA has taken me all over the country, from Oklahoma City and Memphis to my current home in Alaska.</p>
-        <p>When I'm not working, I love to get out on my motorcycle or hit the trails on my mountain bike. I'm also a big fan of gaming, whether it's playing video games or tabletop RPGs like Pathfinder and D&amp;D with my step-brother.</p>
-        <p>My house has been taken over by my three sled dogs, Hanzo and Sombra - siblings from the same litter and our adoptee, Misty. We stay active together, and one of our favorite things is Bikejoring. If you're not familiar, it's a sport where the dogs pull someone riding a bike - it's a great workout especially through trails in the woods.</p>
-        <p>As much as I like Alaska, I do miss some aspects of my previous homes, especially the food trucks in Memphis and Oklahoma City. Fairbanks just doesn't have the same variety when it comes to food and entertainment options. Though Alaska is a great place for my other hobby which is long range shooting. I served as a designated marksman in the army, and now I teach long-range shooting as a side job and compete in long-range competitions whenever I get the chance.</p>
-      <div class="resumeContainer">
-        <div class="eduContainer">
-          <h2>Education</h2><br>
-            <ul>
-              <li>Cottondale HS, Diploma</li><br>
-              <li>Mike Monroney ATC Academy</li><br>
-              <li>Penn State, standby...</li><br>
-              <li>Code Fellows, in progress...</li><br>
-            </ul>
+  <div id="layerOne" style="font-size: xx-large;">
+    <h1 class="typedText"></h1>
+    <span id="cursor" class="cursor">|</span>
+    <button id="enterButton">Seal my fate</button>
+  </div>
+  <div id="layerTwo" style="display:none;">
+
+    <header>
+      <nav></nav>
+      <h1 class="aboutMe">ABOUT ME</h1>
+      <h2 class="ownerName">Dylan Cooper</h2>
+    </header>
+    <main>
+      <div class="mainFlex">
+        <div class="palmLeftSide">
+          <img src="../img/palmTreeRight.png" alt="Retro Miami Vice style pink Palm Tree hanging to the right"
+            class="palmLeftImg">
         </div>
-        <div class="jobContainer">
-          <h2>Job Experience</h2><br>
-            <ul>
-              <li>United States Army, Air Traffic Controller</li><br>
-              <li>Federal Aviation Administration, Air Traffic Controller</li><br>
-              <li>Machinist / Gunsmith</li><br>
-              <li>Long Range Shooting Instructor</li><br>
-            </ul>
+        <div class="bioContainer">
+          <span class="cursor"></span>
+          <h1>Short Bio</h1>
+          <p>Hey everyone, my name is Cooper, and I'd like to tell you a little about myself. I was born in Florida, but
+            I spent most of my childhood in two very different places: Staten Island in New York and the beautiful
+            countryside of Pennsylvania. My career as an air traffic controller with the FAA has taken me all over the
+            country, from Oklahoma City and Memphis to my current home in Alaska.</p>
+          <p>When I'm not working, I love to get out on my motorcycle or hit the trails on my mountain bike. I'm also a
+            big fan of gaming, whether it's playing video games or tabletop RPGs like Pathfinder and D&amp;D with my
+            step-brother.</p>
+          <p>My house has been taken over by my three sled dogs, Hanzo and Sombra - siblings from the same litter and
+            our adoptee, Misty. We stay active together, and one of our favorite things is Bikejoring. If you're not
+            familiar, it's a sport where dogs pull someone riding a bike - it's a great workout especially through
+            trails.</p>
+          <p>As much as I like Alaska, I do miss the "smaller 48", especially the food trucks in Memphis and Oklahoma
+            City. Fairbanks just doesn't have the same variety when it comes to food and entertainment options, place is
+            kinda eh. Although Alaska is a great place for my other hobby which is long range shooting. I was a
+            designated marksman in the army, and I teach long-range shooting as a side job and compete in long-range
+            competitions whenever I get the chance.</p>
+          <div class="resumeContainer">
+            <div class="eduContainer">
+              <h2>Education</h2><br>
+              <ul>
+                <li>Cottondale HS, Diploma</li>
+                <li>Mike Monroney ATC Academy</li>
+                <li>Penn State, standby...</li>
+                <li>Code Fellows, in progress...</li>
+              </ul>
+            </div>
+            <div class="jobContainer">
+              <h2>Job Experience</h2><br>
+              <ul>
+                <li>United States Army, Air Traffic Controller</li>
+                <li>Federal Aviation Administration, Air Traffic Controller</li>
+                <li>Machinist / Gunsmith</li>
+                <li>Long Range Shooting Instructor</li>
+              </ul>
+            </div>
+          </div>
+          <div class="topTen">
+            <h2>Top 10 favorite mainstream artists any genre</h2><br>
+            <ol>
+              <li>Metallica</li>
+              <li>Living Colour</li>
+              <li>Rammstein</li>
+              <li>Taylor Swift</li>
+              <li>Joji / Pink Guy</li>
+              <li>AURORA</li>
+              <li>Jeff Buckley</li>
+              <li>Lenny Kravitz</li>
+              <li>Kid Cudi</li>
+              <li>St. Vincent</li>
+            </ol>
+          </div>
+        </div>
+        <div class="palmRightSide">
+          <img src="../img/palmTreeRight.png" alt="Retro Miami Vice style pink Palm Tree hanging to the left"
+            class="palmRightImg">
         </div>
       </div>
-      <div class="topTen">
-        <h2>Top 10 favorite mainstream artists any genre</h2><br>
-          <ol>
-            <li>Metallica</li><br>
-            <li>Living Colour</li><br>
-            <li>Rammstein</li><br>
-            <li>Taylor Swift</li><br>
-            <li>Joji / Pink Guy</li><br>
-            <li>AURORA</li><br>
-            <li>Jeff Buckley</li><br>
-            <li>Lenny Kravitz</li><br>
-            <li>Kid Cudi</li><br>
-            <li>St. Vincent</li><br>
-          </ol>
-      </div>
+    </main>
+    <div class="footContainer">
+      <footer>&copy; Copyright 2023 [insert scary legalese here]</footer>
     </div>
-  </main>
-  <div class="footContainer">
-  <footer>&copy; Copyright 2023 [insert scary legalese here]</footer>
   </div>
   <script src="js/app.js"></script>
 </body>
+
 </html>
