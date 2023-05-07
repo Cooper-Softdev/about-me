@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #00fff9;
-  background-image: url('img/vaporwaveSun.png');
+  background-image: url('../img/vaporwaveSun.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center 40%;
@@ -24,6 +24,11 @@ body {
   background-color: black;
   z-index: 9999;
   color: #00FF00;
+  font-size: xx-large;
+}
+
+#layerTwo {
+  display: none;
 }
 
 #layerOne h1 {
@@ -159,12 +164,10 @@ h1 {
 }
 
 .eduContainer {
-  padding-right: 10px;
   padding-right: 40px;
  }
 
 .jobContainer {
-  padding-left: 0px;
 }
 
 .topTen {

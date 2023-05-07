@@ -1,23 +1,26 @@
 /* eslint-disable no-inner-declarations */
 'use strict';
 
-let userName = prompt('Hey you! What\'s your name? Or type skip to...skip.');
 
-if (userName !== 'skip') {
+let userName = prompt('Hey you! What\'s your name? Or type skip to...skip.');
+if (userName === 'skip' || userName === null) {
+  typer();
+}
+else if (userName !== 'skip') {
   alert(`Welcome to my about me ${userName}! To learn a bit... about me, let's play a guessing game, answer with yes/no or y/n`);
   let correctGuess = 0;
   // Question1
   function firstQuestion() {
     let questionOne = prompt('Do I have any pets?').toLowerCase();
-
-    if (questionOne === 'y' || questionOne === 'yes') {
+    if (questionOne === null) {
+      typer();
+    } else if (questionOne === 'y' || questionOne === 'yes') {
       alert(`${userName}! You are correct! I have 3 sled dogs, Hanzo, Sombra, and Misty. Here's a classic sled dog saying "If you pets my head, I'll pulls the sled"`);
       correctGuess++;
     } else if (questionOne === 'n' || questionOne === 'no') {
       alert(`Sorry ${userName}, not quite. I have 3 sled dogs, Hanzo, Sombra, and Misty. Here's a classic sled dog saying "If you pets my head, I'll pulls the sled"`);
     }
   }
-
 
   function secondQuestion() {
     let questionTwo = prompt('Next question! Do I play an instrument?').toLowerCase();
@@ -29,7 +32,6 @@ if (userName !== 'skip') {
     }
   }
 
-
   function thirdQuestion() {
     //Question3
     let questionThree = prompt('This one should be easy. Am I a fan of motor sports?').toLowerCase();
@@ -40,7 +42,6 @@ if (userName !== 'skip') {
       alert('Oof that is incorrect, there\'s a pattern to these answers, ya know.');
     }
   }
-
 
   function fourthQuestion() {
     //Question4
@@ -64,7 +65,6 @@ if (userName !== 'skip') {
       correctGuess++;
     }
   }
-
 
   function sixthQuestion() {
     // Question6
@@ -115,6 +115,7 @@ if (userName !== 'skip') {
   fifthQuestion();
   sixthQuestion();
   seventhQuestion();
+  
   if (guessedDogsArr.length === myDogsArr.length) {
     correctGuess++;
     console.log(correctGuess);
@@ -137,6 +138,7 @@ let textArrayIndex = 0;
 let charIndex = 0;
 const cursor = document.getElementById('cursor');
 
+
 function typer() {
   if (charIndex < textArray[textArrayIndex].length) {
     const currentChar = textArray[textArrayIndex].charAt(charIndex);
@@ -149,51 +151,50 @@ function typer() {
     charIndex++;
     setTimeout(typer, typingDelay);
   }
-  // Add this line to move the cursor after the last character
   typedText.appendChild(cursor);
 }
 document.addEventListener('DOMContentLoaded', function () {
   typer();
 });
 
-// Beware, O Weary Traveler!\n\n
-// Here lies the threshold of peril and doom,\n\n
-// A realm where dragons and dungeons do loom.\n\n
-// Tread lightly, and with caution proceed,\n\n
-// For the brave and the foolish alike may bleed.\n\n
-// \n\n
-// Monsters and magic, darkness and strife,\n\n
-// In these uncharted lands, danger is rife.\n\n
-// Heed these words, lest your fate be sealed,\n\n
-// And your life force forever from this world be peeled.\n\n
-// \n\n
-// Arm yourself with courage and wit,\n\n
-// For in this realm, the weak shall submit.\n\n
-// Turn back now, or face your fears,\n\n
-// But remember, traveler: no one leaves here without tears.\n\n
-// \n\n
-// So, adventurers, with heart and soul, beware,\n\n
-// For those who enter this realm do truly dare.\n\n
-// Let this warning echo through your mind,\n\n
-// And may the light of fortune and glory you find.
-
-// Beware, O Weary Traveler!<br>
-// Here lies the threshold of peril and doom,<br>
-// A realm where dragons and dungeons do loom.<br>
-// Tread lightly, and with caution proceed,<br>
-// For the brave and the foolish alike may bleed.<br>
-// <br>
-// Monsters and magic, darkness and strife,<br>
-// In these uncharted lands, danger is rife.<br>
-// Heed these words, lest your fate be sealed,<br>
-// And your life force forever from this world be peeled.<br>
-// <br>
-// Arm yourself with courage and wit,<br>
-// For in this realm, the weak shall submit.<br>
-// Turn back now, or face your fears,<br>
-// But remember, traveler: no one leaves here without tears.<br>
-// <br>
-// So, adventurers, with heart and soul, beware,<br>
+        // Beware, O Weary Traveler!\n\n
+        // Here lies the threshold of peril and doom,\n\n
+        // A realm where dragons and dungeons do loom.\n\n
+        // Tread lightly, and with caution proceed,\n\n
+        // For the brave and the foolish alike may bleed.\n\n
+        // \n\n
+        // Monsters and magic, darkness and strife,\n\n
+        // In these uncharted lands, danger is rife.\n\n
+        // Heed these words, lest your fate be sealed,\n\n
+        // And your life force forever from this world be peeled.\n\n
+        // \n\n
+        // Arm yourself with courage and wit,\n\n
+        // For in this realm, the weak shall submit.\n\n
+        // Turn back now, or face your fears,\n\n
+        // But remember, traveler: no one leaves here without tears.\n\n
+        // \n\n
+        // So, adventurers, with heart and soul, beware,\n\n
+        // For those who enter this realm do truly dare.\n\n
+        // Let this warning echo through your mind,\n\n
+        // And may the light of fortune and glory you find.
+        
+        // Beware, O Weary Traveler!<br>
+        // Here lies the threshold of peril and doom,<br>
+        // A realm where dragons and dungeons do loom.<br>
+        // Tread lightly, and with caution proceed,<br>
+        // For the brave and the foolish alike may bleed.<br>
+        // <br>
+        // Monsters and magic, darkness and strife,<br>
+        // In these uncharted lands, danger is rife.<br>
+        // Heed these words, lest your fate be sealed,<br>
+        // And your life force forever from this world be peeled.<br>
+        // <br>
+        // Arm yourself with courage and wit,<br>
+        // For in this realm, the weak shall submit.<br>
+        // Turn back now, or face your fears,<br>
+        // But remember, traveler: no one leaves here without tears.<br>
+        // <br>
+        // So, adventurers, with heart and soul, beware,<br>
 // For those who enter this realm do truly dare.<br>
 // Let this warning echo through your mind,<br>
 // And may the light of fortune and glory you find. -->
