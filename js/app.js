@@ -132,7 +132,7 @@ document.getElementById('enterButton').addEventListener('click', function () {
 
 const typedText = document.querySelector('h1.typedText');
 const textArray = ['Beware, O Weary Traveler!\n\nHere lies the threshold of peril and doom,\nA realm where dragons and dungeons do loom.\nTread lightly, and with caution proceed,\nFor the brave and the foolish alike may bleed.\n\nMonsters and magic, darkness and strife,\nIn these uncharted lands, danger is rife.\nHeed these words, lest your fate be sealed,\nAnd your life forever from this world be peeled.\n\nArm yourself with courage and wit,\nFor in this realm, the weak shall submit.\nTurn back now, or face your fears,\nBut remember, traveler: no one leaves without tears.\n\nSo, adventurers, with heart and soul - beware!\nFor those who enter this realm, do truly dare.\nLet this warning echo through your mind,\nAnd may the light of fortune and glory you find.'];
-const typingDelay = 50; // milliseconds
+const typingDelay = 50;
 let textArrayIndex = 0;
 let charIndex = 0;
 const cursor = document.getElementById('cursor');
@@ -149,7 +149,7 @@ function typer() {
     charIndex++;
     setTimeout(typer, typingDelay);
   }
-  // Add this line to move the cursor after the last character
+
   typedText.appendChild(cursor);
 }
 document.addEventListener('DOMContentLoaded', function () {
