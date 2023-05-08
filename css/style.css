@@ -25,6 +25,11 @@ body {
   z-index: 9999;
   color: #00FF00;
   font-size: xx-large;
+
+}
+
+#layerTwo {
+  display: none;
 }
 
 #layerOne h1 {
