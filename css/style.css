@@ -25,6 +25,7 @@ body {
   z-index: 9999;
   color: #00FF00;
   font-size: xx-large;
+
 }
 
 #layerTwo {
@@ -33,6 +34,10 @@ body {
 
 #layerOne h1 {
   margin: 100px
+}
+
+#layerTwo {
+  display: none;
 }
 
 header {
@@ -168,6 +173,7 @@ h1 {
  }
 
 .jobContainer {
+
 }
 
 .topTen {
