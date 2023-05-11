@@ -1,26 +1,23 @@
 /* eslint-disable no-inner-declarations */
 'use strict';
 
-
 let userName = prompt('Hey you! What\'s your name? Or type skip to...skip.');
-if (userName === 'skip' || userName === null) {
-  typer();
-}
-else if (userName !== 'skip') {
+
+if ((userName !== 'skip') && (userName !== null)) {
   alert(`Welcome to my about me ${userName}! To learn a bit... about me, let's play a guessing game, answer with yes/no or y/n`);
   let correctGuess = 0;
   // Question1
   function firstQuestion() {
     let questionOne = prompt('Do I have any pets?').toLowerCase();
-    if (questionOne === null) {
-      typer();
-    } else if (questionOne === 'y' || questionOne === 'yes') {
+
+    if (questionOne === 'y' || questionOne === 'yes') {
       alert(`${userName}! You are correct! I have 3 sled dogs, Hanzo, Sombra, and Misty. Here's a classic sled dog saying "If you pets my head, I'll pulls the sled"`);
       correctGuess++;
     } else if (questionOne === 'n' || questionOne === 'no') {
       alert(`Sorry ${userName}, not quite. I have 3 sled dogs, Hanzo, Sombra, and Misty. Here's a classic sled dog saying "If you pets my head, I'll pulls the sled"`);
     }
   }
+
 
   function secondQuestion() {
     let questionTwo = prompt('Next question! Do I play an instrument?').toLowerCase();
@@ -32,6 +29,7 @@ else if (userName !== 'skip') {
     }
   }
 
+
   function thirdQuestion() {
     //Question3
     let questionThree = prompt('This one should be easy. Am I a fan of motor sports?').toLowerCase();
@@ -42,6 +40,7 @@ else if (userName !== 'skip') {
       alert('Oof that is incorrect, there\'s a pattern to these answers, ya know.');
     }
   }
+
 
   function fourthQuestion() {
     //Question4
@@ -65,6 +64,7 @@ else if (userName !== 'skip') {
       correctGuess++;
     }
   }
+
 
   function sixthQuestion() {
     // Question6
@@ -115,7 +115,6 @@ else if (userName !== 'skip') {
   fifthQuestion();
   sixthQuestion();
   seventhQuestion();
-  
   if (guessedDogsArr.length === myDogsArr.length) {
     correctGuess++;
     console.log(correctGuess);
@@ -133,11 +132,10 @@ document.getElementById('enterButton').addEventListener('click', function () {
 
 const typedText = document.querySelector('h1.typedText');
 const textArray = ['Beware, O Weary Traveler!\n\nHere lies the threshold of peril and doom,\nA realm where dragons and dungeons do loom.\nTread lightly, and with caution proceed,\nFor the brave and the foolish alike may bleed.\n\nMonsters and magic, darkness and strife,\nIn these uncharted lands, danger is rife.\nHeed these words, lest your fate be sealed,\nAnd your life forever from this world be peeled.\n\nArm yourself with courage and wit,\nFor in this realm, the weak shall submit.\nTurn back now, or face your fears,\nBut remember, traveler: no one leaves without tears.\n\nSo, adventurers, with heart and soul - beware!\nFor those who enter this realm, do truly dare.\nLet this warning echo through your mind,\nAnd may the light of fortune and glory you find.'];
-const typingDelay = 50;
+const typingDelay = 50; // milliseconds
 let textArrayIndex = 0;
 let charIndex = 0;
 const cursor = document.getElementById('cursor');
-
 
 function typer() {
   if (charIndex < textArray[textArrayIndex].length) {
@@ -151,12 +149,10 @@ function typer() {
     charIndex++;
     setTimeout(typer, typingDelay);
   }
-
   typedText.appendChild(cursor);
 }
-document.addEventListener('DOMContentLoaded', function () {
-  typer();
-});
+
+typer();
 
         // Beware, O Weary Traveler!\n\n
         // Here lies the threshold of peril and doom,\n\n
